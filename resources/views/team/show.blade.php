@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $member->name.' - BlueGate Realty')
+@section('title', $member->name.' - SOMA PROPERTIES')
 
 @php($memberListings = $member->listings()->with('agent')->where('is_published', true)->latest()->get())
 

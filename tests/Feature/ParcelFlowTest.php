@@ -70,10 +70,10 @@ class ParcelFlowTest extends TestCase
 
     public function test_it_renders_corporate_pages_and_listings(): void
     {
-        $this->get('/')->assertOk()->assertSee('Real estate advisory');
-        $this->get('/about')->assertOk()->assertSee('transparent transactions');
-        $this->get('/services')->assertOk()->assertSee('Property Sales')->assertSee('Facility Management');
-        $this->get('/faq')->assertOk()->assertSee('How do you verify');
+        $this->get('/')->assertOk()->assertSee('Professional, reliable, and results-driven real estate solutions');
+        $this->get('/about')->assertOk()->assertSee('Company Profile');
+        $this->get('/services')->assertOk()->assertSee('Property Acquisition')->assertSee('Compensation Consultancy');
+        $this->get('/faq')->assertOk()->assertSee('What type of clients does SOMA PROPERTIES work with?');
         $this->get('/team')->assertOk()->assertSee('Ama Mensah');
         $this->get('/listings')->assertOk()->assertSee('Executive family villa');
 

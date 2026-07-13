@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $service->title.' - BlueGate Realty')
+@section('title', $service->title.' - SOMA PROPERTIES')
 
 @section('content')
 <div class="container">
@@ -17,18 +17,6 @@
                         <div class="boxed-content-item">
                             <p class="service-lede">{{ $service->summary }}</p>
                             <p>{{ $service->body }}</p>
-                            <div class="service-detail-grid">
-                                <div>
-                                    <span class="service-detail-label">For clients who need</span>
-                                    <strong>Verified advice before committing funds</strong>
-                                    <p>We align budget, location, documentation, and timing before moving you into inspections or negotiations.</p>
-                                </div>
-                                <div>
-                                    <span class="service-detail-label">Handled by</span>
-                                    <strong>A named BlueGate advisor</strong>
-                                    <p>Your advisor coordinates internal checks, seller or landlord communication, and the next action after each milestone.</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -66,19 +54,6 @@
                         </div>
                     @endif
 
-                    <div class="boxed-content service-detail-panel">
-                        <div class="boxed-content-title"><h3>Next Step</h3></div>
-                        <div class="boxed-content-item">
-                            <p>Share your requirement with our team and we will confirm the right advisor, expected timeline, and the documents needed to begin.</p>
-                            <div class="pp-single-features">
-                                <ul>
-                                    <li><a href="#"><i class="fal fa-circle-check"></i> Requirement review and advisor assignment</a></li>
-                                    <li><a href="#"><i class="fal fa-circle-check"></i> Clear checklist before inspection or reservation</a></li>
-                                    <li><a href="#"><i class="fal fa-circle-check"></i> Support through documentation and closing</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="col-lg-4">

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Blog - BlueGate Realty')
+@section('title', 'Blog - SOMA PROPERTIES')
 
 @section('content')
 <!--section-->
@@ -11,7 +11,7 @@
                 <div class="hero-section-container">
                     <div class="hero-section-title">
                         <h2>Blog &amp; Guides</h2>
-                        <h5>Buying guides, land documentation, and market trends from the BlueGate advisory team.</h5>
+                        <h5>Buying guides, land documentation, and market trends from the SOMA advisory team.</h5>
                     </div>
                 </div>
             </div>

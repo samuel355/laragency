@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'About - BlueGate Realty')
+@section('title', 'About - SOMA PROPERTIES')
 
 @section('content')
 <!--section-->
@@ -10,7 +10,7 @@
             <div class="container">
                 <div class="hero-section-container">
                     <div class="hero-section-title">
-                        <h2>About BlueGate Realty</h2>
+                        <h2>About SOMA PROPERTIES</h2>
                         <h5>{{ $content?->subtitle }}</h5>
                     </div>
                 </div>
@@ -49,21 +49,45 @@
                             <p>{{ $content?->body }}</p>
                             <div class="pp-single-features">
                                 <ul>
-                                    <li><a href="#"><i class="fal fa-circle-check"></i> Document review</a></li>
-                                    <li><a href="#"><i class="fal fa-circle-check"></i> Inspection coordination</a></li>
-                                    <li><a href="#"><i class="fal fa-circle-check"></i> Buyer support</a></li>
-                                    <li><a href="#"><i class="fal fa-circle-check"></i> Payment tracking</a></li>
+                                    <li><a href="#"><i class="fal fa-circle-check"></i> Acquisition and disposal advice</a></li>
+                                    <li><a href="#"><i class="fal fa-circle-check"></i> Valuation and market research</a></li>
+                                    <li><a href="#"><i class="fal fa-circle-check"></i> Development and planning support</a></li>
+                                    <li><a href="#"><i class="fal fa-circle-check"></i> Leasing and landlord-tenant advisory</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="about-img">
-                                <img src="{{ asset('light/images/all/15.jpg') }}" class="respimg" alt="About BlueGate Realty" loading="lazy" decoding="async">
+                                <img src="{{ asset('light/images/all/15.jpg') }}" class="respimg" alt="About SOMA PROPERTIES" loading="lazy" decoding="async">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            @if($mission)
+                <div class="boxed-content">
+                    <div class="about-wrap boxed-content-item">
+                        <div class="about-title ab-hero">
+                            <h2>{{ $mission->title }}</h2>
+                            <h4>{{ $mission->subtitle }}</h4>
+                        </div>
+                        <p>{{ $mission->body }}</p>
+                    </div>
+                </div>
+            @endif
+
+            @if($vision)
+                <div class="boxed-content">
+                    <div class="about-wrap boxed-content-item">
+                        <div class="about-title ab-hero">
+                            <h2>{{ $vision->title }}</h2>
+                            <h4>{{ $vision->subtitle }}</h4>
+                        </div>
+                        <p>{{ $vision->body }}</p>
+                    </div>
+                </div>
+            @endif
 
             @if($stats->isNotEmpty())
                 <div class="row">
@@ -89,7 +113,7 @@
                 <div class="fw_car_title-wrap">
                     <div class="fw_car_title">
                         <h3>Meet Our Team</h3>
-                        <p>Advisors, land specialists, and client managers behind every BlueGate transaction.</p>
+                        <p>Property advisors, development specialists, and client managers behind every SOMA PROPERTIES assignment.</p>
                     </div>
                 </div>
                 <div class="agnet-carousel-wrap">

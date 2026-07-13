@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Contact - BlueGate Realty')
+@section('title', 'Contact - SOMA PROPERTIES')
 
 @section('content')
 <!--section-->
@@ -54,7 +54,7 @@
                             <i class="fa-regular fa-mailbox"></i>
                             <span>Our Mail</span>
                             <p>Send documents, inquiries, or scheduling requests by email.</p>
-                            <a href="mailto:{{ $content?->metadata['email'] ?? 'hello@bluegaterealty.test' }}">{{ $content?->metadata['email'] ?? 'hello@bluegaterealty.test' }}</a>
+                            <a href="mailto:{{ $content?->metadata['email'] ?? 'hello@somaproperties.test' }}">{{ $content?->metadata['email'] ?? 'hello@somaproperties.test' }}</a>
                         </div>
                     </div>
                 </div>
@@ -159,10 +159,10 @@
             var marker = new google.maps.Marker({
                 position: position,
                 map: contactMap,
-                title: 'BlueGate Realty - East Legon, Accra',
+                title: 'SOMA PROPERTIES - East Legon, Accra',
             });
             var infoWindow = new google.maps.InfoWindow({
-                content: 'BlueGate Realty - East Legon, Accra',
+                content: 'SOMA PROPERTIES - East Legon, Accra',
             });
 
             marker.addListener('click', function () {

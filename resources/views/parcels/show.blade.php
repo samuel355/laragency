@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $parcel->plot_number.' - '.$parcel->title.' - BlueGate Realty')
+@section('title', $parcel->plot_number.' - '.$parcel->title.' - SOMA PROPERTIES')
 
 @push('styles')
 <style>
@@ -129,7 +129,7 @@
                 <section class="plot-panel">
                     <h2>Plot Overview</h2>
                     <p>{{ $parcel->plot_number }} is part of the currently available demarcated parcel area at {{ $parcel->location_name }}. The plot has a mapped boundary, a clear status, and a purchase flow that keeps buyer details tied to the selected plot.</p>
-                    <p>Use the map preview to confirm the shape and position, then choose to buy, reserve, or send an interest request for the BlueGate team to follow up.</p>
+                    <p>Use the map preview to confirm the shape and position, then choose to buy, reserve, or send an interest request for the SOMA PROPERTIES team to follow up.</p>
                     <div class="plot-info-list">
                         <div class="plot-info-item"><span>Parcel area</span><strong>{{ $attrs['project_area'] ?? $parcel->location_name }}</strong></div>
                         <div class="plot-info-item"><span>Street</span><strong>{{ $attrs['Street_Nam'] ?? $attrs['street_name'] ?? 'Access road available' }}</strong></div>
@@ -140,7 +140,7 @@
 
                 <section class="plot-panel" style="margin-top: 22px;">
                     <h3>Documentation And Buyer Support</h3>
-                    <p>BlueGate can support title checks, registration guidance, site visit coordination, and payment processing for this plot. Reservation and purchase requests are reviewed against the live parcel status before confirmation.</p>
+                    <p>SOMA PROPERTIES can support title checks, registration guidance, site visit coordination, and payment processing for this plot. Reservation and purchase requests are reviewed against the live parcel status before confirmation.</p>
                     <div class="plot-info-list">
                         <div class="plot-info-item"><span>Registration</span><strong>{{ $attrs['registration'] ?? 'Available on request' }}</strong></div>
                         <div class="plot-info-item"><span>Site visit</span><strong>Can be arranged</strong></div>

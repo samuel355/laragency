@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $listing->title.' - BlueGate Realty')
+@section('title', $listing->title.' - SOMA PROPERTIES')
 
 @section('content')
 <!--container-->

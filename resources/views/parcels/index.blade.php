@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Buy Land - BlueGate Realty')
+@section('title', 'Buy Land - SOMA PROPERTIES')
 
 @push('styles')
 <style>

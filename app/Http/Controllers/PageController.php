@@ -44,6 +44,8 @@ class PageController extends Controller
     {
         return view('pages.about', [
             'content' => SiteContent::where('key', 'about')->first(),
+            'mission' => SiteContent::where('key', 'mission')->first(),
+            'vision' => SiteContent::where('key', 'vision')->first(),
             'team' => TeamMember::where('is_active', true)->orderBy('sort_order')->get(),
             'stats' => CompanyStat::where('is_active', true)->orderBy('sort_order')->get(),
         ]);

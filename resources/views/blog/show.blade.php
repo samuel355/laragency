@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $post->title.' - BlueGate Realty')
+@section('title', $post->title.' - SOMA PROPERTIES')
 
 @section('content')
 <div class="container">

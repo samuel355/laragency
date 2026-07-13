@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Mortgage Inquiry - BlueGate Realty')
+@section('title', 'Mortgage Inquiry - SOMA PROPERTIES')
 
 @section('content')
 <!--section-->

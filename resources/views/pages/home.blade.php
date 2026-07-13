@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'BlueGate Realty — Verified Property, Land & Investment Advisory in Ghana')
+@section('title', 'SOMA PROPERTIES - Professional Real Estate Advisory in Ghana')
 
 @section('content')
 <!--section-->
@@ -19,7 +19,7 @@
                                             <div class="swiper-slide">
                                                 <div class="hero-carousel_item" data-imbg="{{ asset($hero?->image_path ?? '/light/images/bg/12.jpg') }}">
                                                     <div class="hero-section-title hs_align-title">
-                                                        <div class="hero-section-title_sub">Corporate property advisors — Accra, Ghana</div>
+                                                        <div class="hero-section-title_sub">Professional property advisors - Accra, Ghana</div>
                                                         <h2>{{ $hero?->title }}</h2>
                                                         <h5>{{ $hero?->subtitle }}</h5>
                                                         <a href="{{ route('listings.index') }}" class="commentssubmit csb_color" style="margin-top: 40px">Explore Listings</a>
@@ -48,7 +48,7 @@
                                             <div class="swiper-slide">
                                                 <div class="hero-carousel_item" data-imbg="{{ asset('light/images/bg/8.jpg') }}">
                                                     <div class="hero-section-title hs_align-title">
-                                                        <div class="hero-section-title_sub">Few Words About Our Agency</div>
+                                                        <div class="hero-section-title_sub">About SOMA PROPERTIES</div>
                                                         <h2>{{ $about?->title }}</h2>
                                                         <h5>{{ $about?->subtitle }}</h5>
                                                         <a href="{{ route('about') }}" class="commentssubmit csb_color custom-scroll-link" style="margin-top: 40px">Read more about us</a>
@@ -149,16 +149,16 @@
                             <p>{{ $about?->body }}</p>
                             <div class="pp-single-features">
                                 <ul>
-                                    <li><a href="#"><i class="fal fa-circle-check"></i> Document review</a></li>
-                                    <li><a href="#"><i class="fal fa-circle-check"></i> Inspection coordination</a></li>
-                                    <li><a href="#"><i class="fal fa-circle-check"></i> Buyer support</a></li>
-                                    <li><a href="#"><i class="fal fa-circle-check"></i> Payment tracking</a></li>
+                                    <li><a href="#"><i class="fal fa-circle-check"></i> Property acquisition</a></li>
+                                    <li><a href="#"><i class="fal fa-circle-check"></i> Valuation and market research</a></li>
+                                    <li><a href="#"><i class="fal fa-circle-check"></i> Development and planning consultancy</a></li>
+                                    <li><a href="#"><i class="fal fa-circle-check"></i> Leasing and rent reviews</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="about-img">
-                                <img src="{{ asset('light/images/all/15.jpg') }}" class="respimg" alt="About BlueGate Realty" loading="lazy" decoding="async">
+                                <img src="{{ asset('light/images/all/15.jpg') }}" class="respimg" alt="About SOMA PROPERTIES" loading="lazy" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -288,7 +288,7 @@
                     <div class="row">
                         <div class="col-lg-5">
                             <div class="about-title ab-hero">
-                                <h2>{{ $whyChooseUs?->title ?? 'Why Choose BlueGate Realty' }}</h2>
+                                <h2>{{ $whyChooseUs?->title ?? 'Why Choose SOMA PROPERTIES' }}</h2>
                                 <h4>{{ $whyChooseUs?->subtitle }}</h4>
                             </div>
                             <div class="services-opions">
@@ -309,7 +309,7 @@
                                 <div class="about-img-hotifer">
                                     <p>{{ $about?->body }}</p>
                                     <h4>Ama Mensah</h4>
-                                    <h5>Managing Broker</h5>
+                                    <h5>Principal Property Advisor</h5>
                                 </div>
                             </div>
                         </div>
@@ -368,8 +368,8 @@
         <div class="content-section">
             <div class="container">
                 <div class="section-title">
-                    <h4>What said about us</h4>
-                    <h2>Testimonials and Clients</h2>
+                    <h4>What clients say about us</h4>
+                    <h2>Testimonials and Client Results</h2>
                 </div>
             </div>
             <div class="testimonilas-carousel-wrap">

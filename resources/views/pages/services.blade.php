@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Services - BlueGate Realty')
+@section('title', 'Services - SOMA PROPERTIES')
 
 @section('content')
 <!--section-->
@@ -11,7 +11,7 @@
                 <div class="hero-section-container">
                     <div class="hero-section-title">
                         <h2>Our Services</h2>
-                        <h5>Corporate-grade support across acquisition, sales, land reservations, and investment decisions.</h5>
+                        <h5>Professional support across acquisition, development, planning, valuation, marketing, leasing, research, disposal, and compensation matters.</h5>
                     </div>
                 </div>
             </div>

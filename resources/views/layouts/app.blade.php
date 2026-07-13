@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title', 'BlueGate Realty')</title>
+    <title>@yield('title', 'SOMA PROPERTIES')</title>
     <link rel="stylesheet" href="{{ asset('light/css/plugins.css') }}">
     <link rel="stylesheet" href="{{ asset('light/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('light/css/app-blue.css') }}">
@@ -32,7 +32,7 @@
     <header class="main-header">
         <div class="container">
             <div class="header-inner">
-                <a href="{{ route('home') }}" class="logo-holder">BlueGate <span>Realty</span></a>
+                <a href="{{ route('home') }}" class="logo-holder">SOMA <span>PROPERTIES</span></a>
                 <!--  navigation -->
                 <div class="nav-holder main-menu">
                     <nav>
@@ -71,8 +71,6 @@
                         @csrf
                         <button type="submit" style="all: unset; display: flex; align-items: center; gap: 6px; cursor: pointer;"><i class="fa-thin fa-arrow-right-from-bracket"></i><span>Logout</span></button>
                     </form>
-                @else
-                    <a href="{{ route('login') }}" class="show-reg-form"><i class="fa-thin fa-user"></i><span>Sign In</span></a>
                 @endauth
                 <a href="{{ route('listings.index') }}" class="header-btn"><span>Explore Properties</span></a>
             </div>
@@ -94,9 +92,9 @@
                         <!-- footer-widget -->
                         <div class="col-lg-4">
                             <div class="footer-widget">
-                                <div class="footer-widget-title">BlueGate Realty</div>
+                                <div class="footer-widget-title">SOMA PROPERTIES</div>
                                 <div class="footer-widget-content">
-                                    <p>Corporate-grade property sales, land acquisition, and investment advisory across Greater Accra, Ghana.</p>
+                                    <p>Professional real estate advisory, acquisition, development, valuation, leasing, and property marketing services across Ghana.</p>
                                     <div class="api-links-wrap">
                                         <a href="https://wa.me/233300000000" target="_blank" rel="noopener" class="footer-widget-content-link"><span>WhatsApp Us</span><i class="fa-brands fa-whatsapp"></i></a>
                                         <a href="tel:+233300000000" class="footer-widget-content-link"><span>Call Us</span><i class="fa-solid fa-phone"></i></a>
@@ -130,8 +128,8 @@
                                 <div class="footer-widget-content">
                                     <div class="footer-list footer-box">
                                         <ul class="footer-contacts">
-                                            <li><span>Mail :</span><a href="mailto:hello@bluegaterealty.test" target="_blank">hello@bluegaterealty.test</a></li>
-                                            <li><span>Adress :</span><a href="{{ route('contact') }}">East Legon, Accra</a></li>
+                                            <li><span>Mail :</span><a href="mailto:hello@somaproperties.test" target="_blank">hello@somaproperties.test</a></li>
+                                            <li><span>Address :</span><a href="{{ route('contact') }}">East Legon, Accra</a></li>
                                             <li><span>Phone :</span><a href="tel:+233300000000">+233 30 000 0000</a></li>
                                         </ul>
                                         <a href="{{ route('contact') }}" class="footer-widget-content-link"><span>Get in Touch</span><i class="fa-solid fa-caret-right"></i></a>
@@ -145,7 +143,7 @@
                             <div class="footer-widget">
                                 <div class="footer-widget-title">Get Started</div>
                                 <div class="footer-widget-content">
-                                    <p>Book a site visit, run a mortgage inquiry, or talk to an advisor about a property.</p>
+                                    <p>Book a site visit, request a valuation, discuss a lease, or talk to an advisor about your next property decision.</p>
                                     <div class="footer-list footer-box">
                                         <ul>
                                             <li><a href="{{ route('site-visits.create') }}">Book a site visit</a></li>
@@ -162,7 +160,7 @@
                 <div class="footer-bottom">
                     <a href="{{ route('home') }}" class="footer-home_link"><i class="fa-regular fa-house"></i></a>
                     <div class="copyright">
-                        <span>&#169;BlueGate Realty {{ now()->year }}</span> . All rights reserved.
+                        <span>&#169;SOMA PROPERTIES {{ now()->year }}</span> . All rights reserved.
                     </div>
                     <div class="footer-social">
                         <span class="footer-social-title">Follow Us</span>
