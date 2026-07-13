@@ -5,6 +5,8 @@ use App\Http\Controllers\AdminContentController;
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\AdminFaqController;
 use App\Http\Controllers\AdminListingController;
+use App\Http\Controllers\AdminOrderController;
+use App\Http\Controllers\AdminRequestController;
 use App\Http\Controllers\AdminServiceController;
 use App\Http\Controllers\AdminTeamMemberController;
 use App\Http\Controllers\AuthController;
@@ -64,4 +66,7 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'admin'])->group(fun
     Route::resource('team', AdminTeamMemberController::class)->except(['show', 'destroy']);
     Route::resource('faqs', AdminFaqController::class)->except(['show', 'destroy']);
     Route::resource('parcels', AdminParcelController::class)->except(['show', 'destroy']);
+    Route::get('/requests', [AdminRequestController::class, 'index'])->name('requests.index');
+    Route::delete('/requests/{type}/{id}', [AdminRequestController::class, 'destroy'])->name('requests.destroy');
+    Route::get('/orders', [AdminOrderController::class, 'index'])->name('orders.index');
 });
