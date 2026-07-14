@@ -17,45 +17,42 @@
                                         <div class="swiper-wrapper">
                                             <!-- swiper-slide-->
                                             <div class="swiper-slide">
-                                                <div class="hero-carousel_item" data-imbg="{{ asset($hero?->image_path ?? '/light/images/bg/12.jpg') }}">
+                                                <div class="hero-carousel_item" data-imbg="{{ asset('light/images/bg/hero1.jpg') }}">
                                                     <div class="hero-section-title hs_align-title">
-                                                        <div class="hero-section-title_sub">Professional property advisors - Accra, Ghana</div>
-                                                        <h2>{{ $hero?->title }}</h2>
-                                                        <h5>{{ $hero?->subtitle }}</h5>
-                                                        <a href="{{ route('listings.index') }}" class="commentssubmit csb_color" style="margin-top: 40px">Explore Listings</a>
+                                                        <div class="hero-section-title_sub">About SOMA PROPERTIES</div>
+                                                        <h2>{{ $about?->title }}</h2>
+                                                        <h5>{{ $about?->subtitle }}</h5>
+                                                        <a href="{{ route('about') }}" class="commentssubmit csb_color" style="margin-top: 40px">Read more about us</a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <!-- swiper-slide end-->
-                                            @if($featuredListings->first())
+                                            <!-- swiper-slide-->
+                                            <div class="swiper-slide">
+                                                <div class="hero-carousel_item" data-imbg="{{ asset('light/images/bg/hero2.jpg') }}">
+                                                    <div class="hero-section-title hs_align-title">
+                                                        <div class="hero-section-title_sub">Land for Sale in Ghana</div>
+                                                        <h2>Explore Verified Land Parcels</h2>
+                                                        <h5>Titled, surveyed land parcels ready for acquisition and development.</h5>
+                                                        <a href="{{ route('parcels.index') }}" class="commentssubmit csb_color" style="margin-top: 40px">Explore Land</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- swiper-slide end-->
+                                            @if($services->first())
                                                 <!-- swiper-slide-->
                                                 <div class="swiper-slide">
-                                                    <div class="hero-carousel_item" data-imbg="{{ asset($featuredListings->first()->primaryImage()) }}">
+                                                    <div class="hero-carousel_item" data-imbg="{{ asset('light/images/bg/10.jpg') }}">
                                                         <div class="hero-section-title hs_align-title">
-                                                            <div class="hero-section-title_sub">Featured Listing</div>
-                                                            <h2><a href="{{ route('listings.show', $featuredListings->first()) }}">{{ $featuredListings->first()->title }}</a></h2>
-                                                            <div class="geodir-category-location">
-                                                                <a href="#" class="map-item single-map-item"><i class="fas fa-map-marker-alt"></i> {{ $featuredListings->first()->city }}, {{ $featuredListings->first()->region }}</a>
-                                                            </div>
-                                                            <p>{{ \Illuminate\Support\Str::limit($featuredListings->first()->description, 120) }}</p>
-                                                            <a href="{{ route('listings.show', $featuredListings->first()) }}" class="commentssubmit csb_color" style="margin-top: 40px">View Details</a>
+                                                            <div class="hero-section-title_sub">Our Services</div>
+                                                            <h2>{{ $services->first()->title }}</h2>
+                                                            <h5>{{ \Illuminate\Support\Str::limit($services->first()->summary, 120) }}</h5>
+                                                            <a href="{{ route('services.show', $services->first()) }}" class="commentssubmit csb_color" style="margin-top: 40px">Learn More</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <!-- swiper-slide end-->
                                             @endif
-                                            <!-- swiper-slide-->
-                                            <div class="swiper-slide">
-                                                <div class="hero-carousel_item" data-imbg="{{ asset('light/images/bg/8.jpg') }}">
-                                                    <div class="hero-section-title hs_align-title">
-                                                        <div class="hero-section-title_sub">About SOMA PROPERTIES</div>
-                                                        <h2>{{ $about?->title }}</h2>
-                                                        <h5>{{ $about?->subtitle }}</h5>
-                                                        <a href="{{ route('about') }}" class="commentssubmit csb_color custom-scroll-link" style="margin-top: 40px">Read more about us</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- swiper-slide end-->
                                         </div>
                                     </div>
                                 </div>
@@ -235,6 +232,7 @@
 </div>
 <!--container end-->
 
+{{--
 @if($communities->isNotEmpty())
 <div class="dark-bg half-carousel-container">
     <div class="city-carousel-wrap">
@@ -277,6 +275,7 @@
     </div>
 </div>
 @endif
+--}}
 
 <!--main-content-->
 <div class="main-content ms_vir_height">
@@ -337,6 +336,7 @@
                 </div>
             @endif
 
+            {{--
             @if($partnerBanks->isNotEmpty())
                 <!-- clients-carousel-wrap-->
                 <div class="clients-carousel-wrap">
@@ -359,6 +359,7 @@
                 </div>
                 <!-- clients-carousel-wrap end-->
             @endif
+            --}}
         </div>
     </div>
     <!--container end-->

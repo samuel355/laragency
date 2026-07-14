@@ -10,7 +10,6 @@ use App\Models\Inquiry;
 use App\Models\PartnerBank;
 use App\Models\PropertyListing;
 use App\Models\SiteContent;
-use App\Models\TeamMember;
 use App\Models\Testimonial;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -30,8 +29,7 @@ class PageController extends Controller
             'about' => SiteContent::where('key', 'about')->first(),
             'whyChooseUs' => SiteContent::where('key', 'why_choose_us')->first(),
             'services' => AgencyService::where('is_active', true)->orderBy('sort_order')->limit(4)->get(),
-            'featuredListings' => (clone $publishedListings)->where('is_featured', true)->latest()->limit(3)->get(),
-            'latestListings' => (clone $publishedListings)->latest()->limit(6)->get(),
+            'latestListings' => (clone $publishedListings)->latest()->limit(3)->get(),
             'communities' => Community::where('is_active', true)->withCount('listings')->orderBy('sort_order')->get(),
             'stats' => CompanyStat::where('is_active', true)->orderBy('sort_order')->get(),
             'testimonials' => Testimonial::where('is_active', true)->orderBy('sort_order')->get(),
@@ -46,7 +44,6 @@ class PageController extends Controller
             'content' => SiteContent::where('key', 'about')->first(),
             'mission' => SiteContent::where('key', 'mission')->first(),
             'vision' => SiteContent::where('key', 'vision')->first(),
-            'team' => TeamMember::where('is_active', true)->orderBy('sort_order')->get(),
             'stats' => CompanyStat::where('is_active', true)->orderBy('sort_order')->get(),
         ]);
     }

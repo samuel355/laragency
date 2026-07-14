@@ -337,13 +337,12 @@ window.initParcelMap = async function () {
     parcels.features.forEach(function (feature) {
         const p = feature.properties;
         const attrs = p.attributes || {};
-        const reserveUrl = `${p.checkout_url}?intent=reserve`;
         const interestUrl = `${contactUrl}?subject=${encodeURIComponent(`Interest in ${p.plot_number} - ${p.title}`)}`;
         const streetName = attrs.Street_Nam || attrs.street_name || 'Street name unavailable';
         const actionButtons = p.status === 'available'
             ? `<div class="map-popup-actions">
-                    <a class="map-popup-action map-popup-action-primary" href="${escapeHtml(p.checkout_url)}">Buy</a>
-                    <a class="map-popup-action map-popup-action-secondary" href="${escapeHtml(reserveUrl)}">Reserve</a>
+                    <a class="map-popup-action map-popup-action-primary js-plot-sale-soon" href="#">Buy</a>
+                    <a class="map-popup-action map-popup-action-secondary js-plot-sale-soon" href="#">Reserve</a>
                     <a class="map-popup-action map-popup-action-ghost" href="${escapeHtml(interestUrl)}">Express Interest</a>
                 </div>`
             : '';
@@ -361,7 +360,7 @@ window.initParcelMap = async function () {
                 <p><strong>Street:</strong> ${escapeHtml(streetName)}</p>
                 ${actionButtons}
                 <div class="map-popup-actions" style="grid-template-columns:1fr;margin-top:7px;">
-                    <a class="map-popup-action map-popup-action-ghost" href="${escapeHtml(p.detail_url)}">View plot details</a>
+                    <a class="map-popup-action map-popup-action-ghost js-plot-sale-soon" href="#">View plot details</a>
                 </div>
             </div>
         `;
@@ -424,6 +423,13 @@ window.initParcelMap = async function () {
                 setActiveParcel(item.dataset.parcelId);
             }
         });
+    });
+
+    document.getElementById('parcel-map')?.addEventListener('click', function (event) {
+        if (!event.target.closest('.js-plot-sale-soon')) return;
+
+        event.preventDefault();
+        alert('Plot will be on sale soon.');
     });
 
     applyFilters();

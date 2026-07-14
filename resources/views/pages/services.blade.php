@@ -30,7 +30,7 @@
     </div>
     <div class="main-content ms_vir_height">
         <div class="boxed-container">
-            <div class="contacts-cards-wrap">
+            <div class="contacts-cards-wrap services-cards-wrap">
                 <div class="row">
                     @foreach($services as $service)
                         <div class="col-lg-6">

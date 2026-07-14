@@ -44,14 +44,9 @@
                                 <a href="{{ route('about') }}">Company <i class="fa-solid fa-caret-down"></i></a>
                                 <ul>
                                     <li><a href="{{ route('about') }}">About</a></li>
-                                    <li><a href="{{ route('team.index') }}">Our Team</a></li>
+                                    {{-- <li><a href="{{ route('team.index') }}">Our Team</a></li> --}}
                                     <li><a href="{{ route('faq') }}">FAQ</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="{{ route('blog.index') }}">Resources <i class="fa-solid fa-caret-down"></i></a>
-                                <ul>
-                                    <li><a href="{{ route('blog.index') }}">Blog</a></li>
+                                    {{-- <li><a href="{{ route('blog.index') }}">Blog</a></li> --}}
                                     <li><a href="{{ route('mortgage.create') }}">Mortgage Inquiry</a></li>
                                     <li><a href="{{ route('site-visits.create') }}">Book a Site Visit</a></li>
                                 </ul>

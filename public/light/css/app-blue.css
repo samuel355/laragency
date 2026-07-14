@@ -299,6 +299,39 @@ button.color-bg:hover,
     margin-bottom: 18px;
 }
 
+.services-cards-wrap .row {
+    row-gap: 24px;
+}
+
+.services-cards-wrap .col-lg-6 {
+    margin-bottom: 24px;
+}
+
+.services-cards-wrap .contacts-card-item {
+    height: 100%;
+}
+
+.coming-soon-panel {
+    background: var(--app-blue-050);
+    border: 1px solid var(--app-border);
+    border-radius: 8px;
+    padding: 72px 24px;
+    text-align: center;
+}
+
+.coming-soon-panel i {
+    color: var(--app-blue-700);
+    font-size: 44px;
+    margin-bottom: 18px;
+}
+
+.coming-soon-panel h3 {
+    color: var(--app-blue-900);
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0;
+}
+
 .agency-split {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);

@@ -75,7 +75,7 @@ class ParcelFlowTest extends TestCase
         $this->get('/services')->assertOk()->assertSee('Property Acquisition')->assertSee('Compensation Consultancy');
         $this->get('/faq')->assertOk()->assertSee('What type of clients does SOMA PROPERTIES work with?');
         $this->get('/team')->assertOk()->assertSee('Ama Mensah');
-        $this->get('/listings')->assertOk()->assertSee('Executive family villa');
+        $this->get('/listings')->assertOk()->assertSee('Property listings is coming soon');
 
         $this->actingAs(User::where('is_admin', true)->firstOrFail());
 

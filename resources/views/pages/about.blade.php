@@ -109,6 +109,7 @@
                 </div>
             @endif
 
+            {{--
             <div class="agent-bg-section">
                 <div class="fw_car_title-wrap">
                     <div class="fw_car_title">
@@ -148,6 +149,7 @@
                     </div>
                 </div>
             </div>
+            --}}
         </div>
     </div>
     <!--main-content end-->

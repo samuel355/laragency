@@ -41,6 +41,12 @@
     <div class="main-content">
         <!--boxed-container-->
         <div class="boxed-container">
+            <div class="coming-soon-panel">
+                <i class="fa-light fa-house-building"></i>
+                <h3>Property listings is coming soon</h3>
+            </div>
+
+            {{--
             <!-- list-searh-input-wrap-->
             <div class="list-searh-input-wrap box_list-searh-input-wrap">
                 <div class="list-searh-input-wrap-title_wrap">
@@ -126,6 +132,7 @@
             <!-- listing-grid end-->
 
             <div class="pagination-wrap">{{ $listings->links() }}</div>
+            --}}
         </div>
         <!--boxed-container end-->
     </div>
