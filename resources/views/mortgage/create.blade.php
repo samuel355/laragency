@@ -31,7 +31,7 @@
     <div class="main-content ms_vir_height">
         <div class="boxed-container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="boxed-content">
                         <div class="boxed-content-title"><h3>Affordability Calculator</h3></div>
                         <div class="boxed-content-item">
@@ -103,6 +103,7 @@
                     </div>
                 </div>
 
+                {{--
                 <div class="col-lg-4">
                     <div class="boxed-content">
                         <div class="boxed-content-title"><h3>Our Partner Banks</h3></div>
@@ -116,6 +117,7 @@
                         </div>
                     </div>
                 </div>
+                --}}
             </div>
         </div>
     </div>
