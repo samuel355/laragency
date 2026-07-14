@@ -332,6 +332,15 @@ button.color-bg:hover,
     margin: 0;
 }
 
+.property-card-footer {
+    min-height: 72px;
+}
+
+.property-card-footer .gid_link {
+    bottom: auto;
+    top: 15px;
+}
+
 .agency-split {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);

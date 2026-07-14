@@ -49,12 +49,28 @@
             </div>
         @endunless
     </div>
-    <div class="geodir-category-footer">
+    <div class="geodir-category-footer property-card-footer">
+        {{--
         @if($listing->agent)
             <a href="{{ route('team.show', $listing->agent) }}" class="gcf-company"><img src="{{ asset($listing->agent->image_path) }}" alt="{{ $listing->agent->name }}" loading="lazy" decoding="async"><span>By {{ $listing->agent->name }}</span></a>
         @else
             <span></span>
         @endif
-        <a href="{{ route('listings.show', $listing) }}" class="gid_link"><span>View Details</span> <i class="fa-solid fa-caret-right"></i></a>
+        --}}
+        <span></span>
+        <a href="#" class="gid_link js-property-details-soon"><span>View Details</span> <i class="fa-solid fa-caret-right"></i></a>
     </div>
 </div>
+
+@once
+    @push('scripts')
+        <script>
+            document.addEventListener('click', function (event) {
+                if (!event.target.closest('.js-property-details-soon')) return;
+
+                event.preventDefault();
+                alert('Property details coming soon.');
+            });
+        </script>
+    @endpush
+@endonce
