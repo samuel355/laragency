@@ -96,8 +96,8 @@
                                 <div class="footer-widget-content">
                                     <p>Professional real estate advisory, acquisition, development, valuation, leasing, and property marketing services across Ghana.</p>
                                     <div class="api-links-wrap">
-                                        <a href="https://wa.me/233300000000" target="_blank" rel="noopener" class="footer-widget-content-link"><span>WhatsApp Us</span><i class="fa-brands fa-whatsapp"></i></a>
-                                        <a href="tel:+233300000000" class="footer-widget-content-link"><span>Call Us</span><i class="fa-solid fa-phone"></i></a>
+                                        <a href="https://wa.me/233544232686" target="_blank" rel="noopener" class="footer-widget-content-link"><span>WhatsApp Us</span><i class="fa-brands fa-whatsapp"></i></a>
+                                        <a href="tel:+233544232686" class="footer-widget-content-link"><span>Call Us</span><i class="fa-solid fa-phone"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -128,9 +128,9 @@
                                 <div class="footer-widget-content">
                                     <div class="footer-list footer-box">
                                         <ul class="footer-contacts">
-                                            <li><span>Mail :</span><a href="mailto:hello@somaproperties.test" target="_blank">hello@somaproperties.test</a></li>
-                                            <li><span>Address :</span><a href="{{ route('contact') }}">East Legon, Accra</a></li>
-                                            <li><span>Phone :</span><a href="tel:+233300000000">+233 30 000 0000</a></li>
+                                            <li><span>Mail :</span><a href="mailto:somaproperties@gmail.com" target="_blank">somaproperties@gmail.com</a></li>
+                                            <li><span>Address :</span><a href="https://maps.app.goo.gl/c4cP2R6tFHMDWbgP6?g_st=ic" target="_blank" rel="noopener">Adum-Nsuase, Opp. Railways Police Station</a></li>
+                                            <li><span>Phone :</span><a href="tel:+233544232686">+233 54 423 2686</a></li>
                                         </ul>
                                         <a href="{{ route('contact') }}" class="footer-widget-content-link"><span>Get in Touch</span><i class="fa-solid fa-caret-right"></i></a>
                                     </div>

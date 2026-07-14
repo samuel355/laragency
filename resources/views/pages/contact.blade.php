@@ -38,7 +38,7 @@
                             <i class="fa-regular fa-location-dot"></i>
                             <span>Our Office</span>
                             <p>{{ $content?->body }}</p>
-                            <a href="#">East Legon, Accra, Ghana</a>
+                            <a href="https://maps.app.goo.gl/c4cP2R6tFHMDWbgP6?g_st=ic" target="_blank" rel="noopener">Adum-Nsuase, Opposite Railways Police Station (Otumfoɔ AkyeameHene Palace)</a>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -46,7 +46,7 @@
                             <i class="fa-regular fa-phone-rotary"></i>
                             <span>Our Phone</span>
                             <p>Speak directly with a property advisor Monday to Friday.</p>
-                            <a href="tel:{{ $content?->metadata['phone'] ?? '+233300000000' }}">{{ $content?->metadata['phone'] ?? '+233 30 000 0000' }}</a>
+                            <a href="tel:{{ str_replace(' ', '', $content?->metadata['phone'] ?? '+233544232686') }}">{{ $content?->metadata['phone'] ?? '+233 54 423 2686' }}</a>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -54,7 +54,7 @@
                             <i class="fa-regular fa-mailbox"></i>
                             <span>Our Mail</span>
                             <p>Send documents, inquiries, or scheduling requests by email.</p>
-                            <a href="mailto:{{ $content?->metadata['email'] ?? 'hello@somaproperties.test' }}">{{ $content?->metadata['email'] ?? 'hello@somaproperties.test' }}</a>
+                            <a href="mailto:{{ $content?->metadata['email'] ?? 'somaproperties@gmail.com' }}">{{ $content?->metadata['email'] ?? 'somaproperties@gmail.com' }}</a>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                                 <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                                 <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="https://wa.me/233300000000" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="https://wa.me/233544232686" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
 @push('scripts')
     <script>
         window.initContactMap = function () {
-            var position = { lat: 5.6401, lng: -0.1537 };
+            var position = { lat: 6.6913333, lng: -1.6201414 };
             var contactMap = new google.maps.Map(document.getElementById('contact-map'), {
                 center: position,
                 zoom: 14,
@@ -159,10 +159,10 @@
             var marker = new google.maps.Marker({
                 position: position,
                 map: contactMap,
-                title: 'SOMA PROPERTIES - East Legon, Accra',
+                title: 'SOMA PROPERTIES - Adum-Nsuase',
             });
             var infoWindow = new google.maps.InfoWindow({
-                content: 'SOMA PROPERTIES - East Legon, Accra',
+                content: 'SOMA PROPERTIES - Adum-Nsuase, Opposite Railways Police Station',
             });
 
             marker.addListener('click', function () {

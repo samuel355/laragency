@@ -169,6 +169,35 @@
 </div>
 <!--container end-->
 
+@if($services->isNotEmpty())
+<!--container-->
+<div class="container">
+    <div class="main-content ms_vir_height">
+        <div class="boxed-container">
+            <div class="listing-grid_heroheader">
+                <h3>Our Services</h3>
+            </div>
+            <div class="contacts-cards-wrap">
+                <div class="row">
+                    @foreach($services as $service)
+                        <div class="col-lg-3 col-md-6">
+                            <div class="contacts-card-item">
+                                <i class="{{ $service->icon }}"></i>
+                                <span>{{ $service->title }}</span>
+                                <p>{{ $service->summary }}</p>
+                                <a href="{{ route('services.show', $service) }}">Learn more <i class="fa-solid fa-caret-right"></i></a>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+            <a href="{{ route('services') }}" class="commentssubmit csb-no-align">View More Services <i class="fa-solid fa-caret-right"></i></a>
+        </div>
+    </div>
+</div>
+<!--container end-->
+@endif
+
 <!--container-->
 <div class="container">
     <!--main-content-->
@@ -205,35 +234,6 @@
     <!--main-content end-->
 </div>
 <!--container end-->
-
-@if($services->isNotEmpty())
-<!--container-->
-<div class="container">
-    <div class="main-content ms_vir_height">
-        <div class="boxed-container">
-            <div class="listing-grid_heroheader">
-                <h3>Our Services</h3>
-            </div>
-            <div class="contacts-cards-wrap">
-                <div class="row">
-                    @foreach($services as $service)
-                        <div class="col-lg-3 col-md-6">
-                            <div class="contacts-card-item">
-                                <i class="{{ $service->icon }}"></i>
-                                <span>{{ $service->title }}</span>
-                                <p>{{ $service->summary }}</p>
-                                <a href="{{ route('services.show', $service) }}">Learn more <i class="fa-solid fa-caret-right"></i></a>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-            <a href="{{ route('services') }}" class="commentssubmit csb-no-align">View More Services <i class="fa-solid fa-caret-right"></i></a>
-        </div>
-    </div>
-</div>
-<!--container end-->
-@endif
 
 @if($communities->isNotEmpty())
 <div class="dark-bg half-carousel-container">

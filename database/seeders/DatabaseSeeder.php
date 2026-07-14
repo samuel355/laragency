@@ -79,9 +79,9 @@ class DatabaseSeeder extends Seeder
             'contact' => [
                 'title' => 'Speak with a property advisor',
                 'subtitle' => 'Send a request and our team will respond with availability, documents, inspection options, and next steps.',
-                'body' => 'Office: East Legon, Accra. Hours: Monday to Friday, 8:30 AM to 5:30 PM.',
+                'body' => 'Office: Adum-Nsuase, Opposite Railways Police Station (Otumfoɔ AkyeameHene Palace). Hours: Monday to Friday, 8:30 AM to 5:30 PM.',
                 'image_path' => '/light/images/bg/8.jpg',
-                'metadata' => ['email' => 'hello@somaproperties.test', 'phone' => '+233 30 000 0000'],
+                'metadata' => ['email' => 'somaproperties@gmail.com', 'phone' => '+233 54 423 2686'],
             ],
             'why_choose_us' => [
                 'title' => 'Why clients choose SOMA PROPERTIES',
